@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="103.528273">
+<testcase classname="Ativação de Cadastro" name="Validar a Ativação de um Cadastro - Listagem Automatica - Fornecendo os ultimos 4 digitos incorretos" time="41.721599">
+<system-out><![CDATA[Dado que estou logado.......................................................passed
+Quando seleciono um produto no Carrossel de Cartões.........................passed
+E inserir os ultimos quatro digitos erroneamente............................passed
+Entao meu Cadastro não será ativado com sucesso.............................passed
+E devo receber a mensagem de alerta: Dados incorretos. Verifique o número e tente novamente..passed
+]]></system-out>
+</testcase>
+<testcase classname="Ativação de Cadastro" name="Validar a Ativação de um Cadastro - Listagem Automatica - Não fornecendo os ultimos 4 digitos" time="32.437732">
+<system-out><![CDATA[Dado que estou logado.......................................................passed
+Quando seleciono um produto no Carrossel de Cartões.........................passed
+E não insiro os ultimos quatro digitos......................................passed
+Entao valido que o botoa Ativar Cartao estah desabilitado...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ativação de Cadastro" name="Validar a Ativação de um Cadastro CPF sem produtos associados" time="29.368942">
+<system-out><![CDATA[Dado que estou logado com um cpf que nao possui produtos....................passed
+Quando valido a existencia do ADICIONAR CARTÃO..............................passed
+Entao valido que o CPF nao possui cartao....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

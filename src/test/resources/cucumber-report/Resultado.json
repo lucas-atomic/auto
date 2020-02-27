@@ -1,0 +1,186 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#/**"
+      },
+      {
+        "line": 3,
+        "value": "# * Autor: Lucas Candido"
+      },
+      {
+        "line": 4,
+        "value": "# * Empresa: Atomic Solutions"
+      },
+      {
+        "line": 5,
+        "value": "# * Data: 27/02/2020"
+      },
+      {
+        "line": 6,
+        "value": "# *"
+      },
+      {
+        "line": 7,
+        "value": "# */"
+      }
+    ],
+    "line": 10,
+    "elements": [
+      {
+        "line": 23,
+        "name": "Validar informacoes retornadas da pesquisa pelo CEP no site dos Correios",
+        "description": "",
+        "id": "pesquisa-site-correios;validar-informacoes-retornadas-da-pesquisa-pelo-cep-no-site-dos-correios;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20799661400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "que estou na pagina Home dos Correios",
+            "match": {
+              "location": "CorreiosStep.que_estou_na_pagina_Home_dos_Correios()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 444923500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "informar o CEP \"01311-922\" para realizar a pesquisa",
+            "match": {
+              "arguments": [
+                {
+                  "val": "01311-922",
+                  "offset": 16
+                }
+              ],
+              "location": "CorreiosStep.informar_o_CEP_para_realizar_a_pesquisa(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 5041879100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "valido o redirecionamento da pagina e gero um arquivo com as informacoes da tabela de resultados da busca pelo CEP",
+            "match": {
+              "location": "CorreiosStep.valido_o_redirecionamento_da_pagina_e_gero_um_arquivo_com_as_informacoes_da_tabela_de_resultados()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@PesquisarCEP"
+          },
+          {
+            "line": 9,
+            "name": "@Correios"
+          },
+          {
+            "line": 15,
+            "name": "@Lucas_Candido"
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "Validar informacoes retornadas da pesquisa pelo Logradouro no site dos Correios",
+        "description": "",
+        "id": "pesquisa-site-correios;validar-informacoes-retornadas-da-pesquisa-pelo-logradouro-no-site-dos-correios;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 28301018300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "que estou na pagina Home dos Correios",
+            "match": {
+              "location": "CorreiosStep.que_estou_na_pagina_Home_dos_Correios()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 425372400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "informar o logradouro \"avenida sao joao\" para realizar a pesquisa",
+            "match": {
+              "arguments": [
+                {
+                  "val": "avenida sao joao",
+                  "offset": 23
+                }
+              ],
+              "location": "CorreiosStep.informar_o_logradouro_para_realizar_a_pesquisa(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 8789210600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "valido o redirecionamento da pagina e gero um arquivo com as informacoes da tabela de resultados da busca pelo logradouro",
+            "match": {
+              "location": "CorreiosStep.valido_o_redirecionamento_da_pagina_e_gero_um_arquivo_com_as_informacoes_da_tabela_de_resultados_da_busca_pelo_logradouro()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Correios"
+          },
+          {
+            "line": 25,
+            "name": "@PesquisarLogradouro"
+          },
+          {
+            "line": 25,
+            "name": "@Lucas_Candido"
+          }
+        ]
+      }
+    ],
+    "name": "Pesquisa site Correios",
+    "description": "\nEu como analista de testes quero validar as informações\nretornadas das pesquisas por CEP e Logradouro no site dos Correios.",
+    "id": "pesquisa-site-correios",
+    "keyword": "Funcionalidade",
+    "uri": "Correios.feature",
+    "tags": [
+      {
+        "line": 9,
+        "name": "@Correios"
+      }
+    ]
+  }
+]
